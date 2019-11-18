@@ -1,0 +1,330 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Mobile First Base Styles */
+
+body {
+    background-color: rgb(33, 33, 33);
+    margin: 0 auto;
+	font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    background-image: linear-gradient(to right, rgb(248, 145, 43), rgb(208, 37, 97));
+    padding: 4px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    color: rgb(253, 253, 253);
+}
+
+h3 {
+    color: rgb(253, 253, 253);
+}
+
+h4 {
+    color: rgb(253, 253, 253);
+}
+
+h6 {
+    color: rgb(253, 253, 253);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.card {
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+    padding: 0;
+}
+
+#nav-card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#info-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#basic-info {
+    align-items: center;
+    justify-content: center;
+}
+
+#face-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#face-pic img {
+    max-height: 171px;
+    max-width: 200px;
+}
+
+#about-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#about-me {
+    align-items: center;
+    justify-content: center;
+}
+
+#back-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-pic img {
+    max-height: 280.8px;
+    max-width: 187.2px;
+}
+
+#resume-card {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#left-exp {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#right-exp {
+    display: flex;
+    flex-direction: column;
+}
+
+#gradient {
+
+    /*
+    background: -webkit-linear-gradient(rgb(248, 145, 43), rgb(208, 37, 97));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+
+    background: -webkit-linear-gradient(left, rgb(248, 145, 43), rgb(208, 37, 97));
+    background: -o-linear-gradient(right, rgb(248, 145, 43), rgb(208, 37, 97));
+    background: -moz-linear-gradient(right, rgb(248, 145, 43), rgb(208, 37, 97));
+    background: linear-gradient(to right, rgb(248, 145, 43), rgb(208, 37, 97));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.orange {
+    color: rgb(248, 145, 43);
+}
+
+.button {
+    background-image: linear-gradient(to right, rgb(248, 145, 43), rgb(208, 37, 97));
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+}
+
+.button:hover {
+    background-color: rgb(253, 253, 253);
+    color: rgb(33, 33, 33)
+}
+
+#left-exp {
+    padding: 0 10px;
+}
+
+#right-exp {
+    padding: 0 10px;
+}
+
+#right-exp ul {
+    color: rgb(253, 253, 253);
+    display: block;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+}
+
+#right-exp li {
+    padding: 4px 0;
+}
+
+.time-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+}
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#portfolio-image-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+#house-plant, #flowers, #photography {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+	
+}
+
+#house-plant img, #flowers img, #photography img {
+	max-height: 200px;
+	max-width: 150px;
+	margin: 10px 25px;
+}
+
+#port-nav li {
+    color: rgb(253, 253, 253);
+}
+
+
+@media screen and (min-width: 575px) {
+
+    body {
+        width: 80%;
+    }
+
+    .card {
+        margin: 25px auto;
+    }
+
+    #nav-card {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 25px
+    }
+
+    #info-card {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    #about-card {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #about-me {
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #back-pic img {
+        max-height: 380.8px;
+        max-width: 287.2px;
+        padding: 0;
+    }
+
+    #exp-box {
+        display: flex;
+        align-items: center;
+        align-content: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #left-exp {
+        text-align: left;
+        align-items: flex-start;
+        padding: 0 25px;
+    }
+
+    #portfolio {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+}
+
+	#portfolio-image-box{
+		flex-direction: row;
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        max-width: 900px
+    }
+
+    #about-me {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #back-pic img {
+        max-height: 380.8px;
+        max-width: 287.2px;
+    }
+}
